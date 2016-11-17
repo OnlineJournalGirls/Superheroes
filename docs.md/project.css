@@ -1,0 +1,14 @@
+h1{ color:red
+	; }
+body { background: rgba(10,0,0,0.8); 
+ }
+ p { color: white; 
+  }
+h2 { color: red;
+ }
+a { color: red;
+	font-size: 20px;
+ }
+#contact_form {
+	margin: 20px;
+}
