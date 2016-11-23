@@ -1,14 +1,112 @@
-h1{ color:red
-	; }
-body { background: rgba(10,0,0,0.8); 
+h1{ 
+	color: rgba(20,20,255,1);
+	font-size: 100px;
+	text-align: left;
+	font-family: 'Patrick Hand', cursive;
+	background: url("http://static.srcdn.com/slir/w570-h300-q90-c570:300/wp-content/uploads/DC-Marvel-Movies-Discussion-Differences.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	margin: 0;
  }
- p { color: white; 
+ .s {
+ 	font-size: 150px;
+ }
+body {
+ 	background: rgba(10,0,0,0.8); 
+ }
+ p { 
+ 	color: white; 
   }
-h2 { color: red;
+h2 { 
+	color: rgba(20,20,255,1);
+	font-size: 50px;
+	font-family: 'Patrick Hand', cursive;
  }
-a { color: red;
+#email {
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 14px;
+	font: times;
+}
+#submit_button {
+	padding: 10px;
+	border-radius: 20px;
+	background: rgba(50,50,50,0.4);
+	color: white;
+	font-size: 15px;
+}
+.row {
+	color: white;
 	font-size: 20px;
- }
-#contact_form {
-	margin: 20px;
+		font-family: 'Patrick Hand', cursive;
+}
+button {
+	padding: 20px;
+	border-radius: 20px;
+	background: rgba(50,50,50,0.4);
+	color: white;
+	font-size: 15px;
+	margin-top: 30px;
+}
+#nav li {
+	font-size: 17px;
+	font-family: 'Patrick Hand', cursive;
+	display: inline;
+	margin: 20px 40px 20px 40px;
+}
+#nav ul {
+	background: rgba(10,10,10,1);
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+#nav a {
+	color: white;
+}
+#DC_Comics li {
+	margin: 40px 0px 40px 0px;
+	font-size: 25px;
+	font-family: 'Patrick Hand', cursive;
+}
+#DC_Comics a {
+	color: rgba(10,10,10,1);
+}
+#forms {
+	text-align: center;
+}
+#Marvel_Comics li {
+	margin: 40px 0px 40px 0px;
+	font-size: 25px;
+	font-family: 'Patrick Hand', cursive;
+}
+#Marvel_Comics a {
+	color: rgba(10,10,10,1);
+}
+#Marvel_Comics {
+	height: 400px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    text-align: left;
+    height: 150px;
+  }
+  .s {
+    font-size: 50px;
+  }
+  #nav li {
+    margin: 0 15px 0 15px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  #Marvel_Comics {
+    height: 400px;
+  }
+  .row {
+    font-size: 16px;
+  }
 }
