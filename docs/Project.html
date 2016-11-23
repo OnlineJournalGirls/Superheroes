@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Superheroes</title>
-	<link rel="stylesheet" type="text/css" href="project.css">
+	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script> 	<link rel="stylesheet" type="text/css" href="project.css">
 	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 </head>
 <body>
@@ -13,24 +13,20 @@
 		<li><a href=<#Marvel_Comics">Marvel Comics</a></li>
 	</ul>
 </div>
-	<h2>DC COMICS</h2>
-<div id='DC_Comics'>
+<h2>DC COMICS</h2>
 	<ul style="list-style-type: none">
-		<li><a href="batman.html" title="Batman">BATMAN A.K.A BRUCE WAYNE</a></li>
-		<li><a href="Superman.html" title= Superman>SUPERMAN A.K.A CLAK KENT</a></li>
+		<div><li><p><b>BATMAN A.K.A BRUCE WAYNE</b><br /><small>Batman is a much darker, grown up look of superhero societies. Bruce Wayne is a multi-millionaire who witnessed his parents being shot as a child. He fights criminals but is not squeeky clean like Superman. The comics are set in Gotham where the town is so corrupted they police are struggling to take down 'the mob' gang. The story of Batman has many dark, twisted, sinister character. The joker, for example, is Batman's archnemesis who is so scary because of his unpredictablitly.</small></p></li></div>
+		<div><li><p><b>SUPERMAN A.K.A CLAK KENT</b><br /><small>Superman was born on the Planet Krypton but his his home was destroyed and so as a baby he was sent to Earth. Superman lived under the alter ego Clark Kent. He used his powers to fight crime.</small></p></li></div>
 	</ul>
-</div>
-<div id='Marvel_Comics'>
 <h2>MARVEL COMICS</h2>
 	<ul style="list-style-type: none">
-		<li><a href="ironman.html" title="ironman">IRONMAN A.K.A TONY STARK</a></li>
-		<li><a href="captain_america.html" title="captain_america">CAPTAIN AMERICA A.K.A STEVE ROGERS</a></li>
-		<li><a href="hulk.html" title="hulk">HULK A.K.A BRUCE BANNER</a></li>
-		<li><a href="thor.html" title="thor">THOR A.K.A NORSE GOD</a></li><br />
+		<div><li><p><b>IRONMAN A.K.A TONY STARK</b><br /><small>Tony Stark is an excentric billionaire who is very money orientated. Everything for him changed when he was kidnapped and the only way for him to escape was to build a robotic suit. This is where the origin of Ironman began. Now he uses his engineering skills to help protect Earth.</small></p></li></div>
+		<div><li><p><b>CAPTAIN AMERICA A.K.A STEVE ROGERS</b><br /><small>During WWII, Steve Rogers underwent an experimental transformation where he became extremely stong and powerful. This is where he became Captain America and used as the face of American propaganda. Until he risked his own life to detonate a bomb away from New York City resulting is his cryogenic freezing under the Atlantic ocean. Many years later the block of ice preserving Captain America's body was found and he awoke is a new, mordern society.</small></p></li></div>
+		<div><li><p><b>HULK A.K.A BRUCE BANNER</b><br /><small>Bruce Banner was exposed to radioactive material which caused him to evolve into a monster. When Bruce gets angry he changes into Hulk. He uses his formation to protect the planet.</small></p></li></div>
+		<div><li><p><b>THOR A.K.A NORSE GOD</b><br /><small>Thor is a Viking God from the mythical world of Askgard? He fell/bannished to Earth where he had to fight against his eveil brother, Loki, to defend Earth.</small></p></li></div>
 	</ul>
-</div>
 <div id="forms">
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+<form class="contact_form" action="#" method="POST" enctype="multipart/form-data">
 	<div class="row">
 		<label for="email">Add your email to our mailing list to be notified <br /> when we add more about your favourite heroes:</label><br />
 		<input id="email" class="input" name="email" type="text" value="Your email:" size="30" /><br />
@@ -38,12 +34,17 @@
 </form>	
 </div>
 
-<div id='social-buttons'>
+<div class='social-buttons'>
       <button class='btn-twitter'>Twitter</button>
       <button class='btn-facebook'>Facebook</button>
       <button class='btn-pinterest'>Pinterest</button>
     </div>
    </div>
+ <script>
+ $('div').on("click", function() {
+   $(this).toggleClass('show-description');
+ });
+ </script>
 </body>
 </html>
 

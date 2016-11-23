@@ -1,8 +1,11 @@
+body {
+ 	background: rgba(10,0,0,0.8); 
+ 	font-family: 'Patrick Hand', cursive;
+ }
 h1{ 
 	color: rgba(20,20,255,1);
 	font-size: 100px;
 	text-align: left;
-	font-family: 'Patrick Hand', cursive;
 	background: url("http://static.srcdn.com/slir/w570-h300-q90-c570:300/wp-content/uploads/DC-Marvel-Movies-Discussion-Differences.jpg");
 	background-position: center;
 	background-size: cover;
@@ -12,16 +15,34 @@ h1{
  .s {
  	font-size: 150px;
  }
-body {
- 	background: rgba(10,0,0,0.8); 
- }
- p { 
- 	color: white; 
-  }
-h2 { 
+ h2 { 
 	color: rgba(20,20,255,1);
 	font-size: 50px;
-	font-family: 'Patrick Hand', cursive;
+ }
+ li {
+ 	margin: 40px 0px 40px 0px;
+ }
+ p {
+ 	color: white;
+ 	font-size: 30px;
+ 	height: 35px;
+ }
+ small { 
+ 	color: rgba(10,10,10,1);
+ 	font-size: 25px;
+ 	opacity: 0;
+ 	transition: heigth .5s; 
+ 	-webkit-transition: heigth .5s;
+ 	-moz-transition: heigth .5s;
+  }
+ .show-description p {
+ 	height: 200px;
+ }
+ .show-description small {
+ 	opacity: 1;
+ }
+ .show-description #Marvel_Comics {
+ 	height: 600px;
  }
 #email {
 	padding: 10px;
@@ -39,7 +60,6 @@ h2 {
 .row {
 	color: white;
 	font-size: 20px;
-		font-family: 'Patrick Hand', cursive;
 }
 button {
 	padding: 20px;
@@ -51,7 +71,6 @@ button {
 }
 #nav li {
 	font-size: 17px;
-	font-family: 'Patrick Hand', cursive;
 	display: inline;
 	margin: 20px 40px 20px 40px;
 }
@@ -65,27 +84,9 @@ button {
 #nav a {
 	color: white;
 }
-#DC_Comics li {
-	margin: 40px 0px 40px 0px;
-	font-size: 25px;
-	font-family: 'Patrick Hand', cursive;
-}
-#DC_Comics a {
-	color: rgba(10,10,10,1);
-}
 #forms {
 	text-align: center;
-}
-#Marvel_Comics li {
-	margin: 40px 0px 40px 0px;
-	font-size: 25px;
-	font-family: 'Patrick Hand', cursive;
-}
-#Marvel_Comics a {
-	color: rgba(10,10,10,1);
-}
-#Marvel_Comics {
-	height: 400px;
+	position: bottom;
 }
 @media (max-width: 500px) {
   h1 {
@@ -102,9 +103,6 @@ button {
   }
   h2 {
     font-size: 35px;
-  }
-  #Marvel_Comics {
-    height: 400px;
   }
   .row {
     font-size: 16px;
