@@ -41,9 +41,6 @@ h1{
  .show-description small {
  	opacity: 1;
  }
- .show-description #Marvel_Comics {
- 	height: 600px;
- }
 #email {
 	padding: 10px;
 	border-radius: 20px;
